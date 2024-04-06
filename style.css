@@ -58,6 +58,7 @@ main{
 .card{
     background-color: white;
     border-radius: 0 0 15px 15px;
+    box-shadow: 10px 10px 50px 1px var(--grayish-blue);
 }
 .initials{
     padding-top: 70px;
@@ -88,4 +89,21 @@ main{
 .place,.follow,.like,.pic{
     color: var(--gray);
     transform: scale(0.75);
+}
+@media (max-width: 375px) {
+    .card-head,.card{
+        padding: 0 20px 0 20px;
+    }
+    .bottom-circle{
+        height: 10px;
+        width: 10px;
+        top: 0vh;
+        left: 0vh;
+        z-index: 3;
+    }
+    .top-circle{
+        bottom: 32vh;
+        right: 100vh;
+        z-index: 3;
+    }
 }
